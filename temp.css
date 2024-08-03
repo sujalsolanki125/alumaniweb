@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border-bottom: 1px solid #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.contact-details {
+    color: #fff;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle {
+    color: #fff;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 1rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 25px;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0072ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+/* Animation on hover */
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Animation on click */
+.nav-links li a:active {
+    transform: scale(1);
+}
+
+/* Preserve existing styles for other components */
+
+/* General Styles */
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background: url(https://gecpatan.ac.in/images/alumni-banner.jpg) no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 10em 0;
+    opacity: 0.9;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    margin: 0;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.container, #divide, #alumni {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.container > p, #divide > div, #alumni > div {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: 45%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container > p {
+    background-color: #6ab04c;
+    color: white;
+}
+
+.container > p:nth-child(2) {
+    background-color: #eb4d4b;
+}
+
+#left {
+    background-color: #7ed6df;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 1em;
+    width: 60%;
+    margin: 2em auto;
+    font-size: 18px;
+}
+
+#left ul {
+    list-style: none;
+    padding: 0;
+}
+
+#left ul li {
+    margin: 0.5em 0;
+}
+
+#box3, #box4 {
+    background-color: #ffbe76;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 1em;
+    text-align: center;
+    flex-basis: 45%;
+}
+
+#box4 {
+    background-color: #ff7979;
+}
+
+#alumni > div {
+    background-color: #f8c291;
+    padding: 1em;
+    text-align: center;
+    flex-basis: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+#alumni > div:hover {
+    background-color: #fad390;
+    transform: scale(1.05);
+}
+
+#alumni img {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+#form {
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 2em;
+    max-width: 600px;
+    margin: 2em auto;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#form input, #form select, #form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#form button {
+    background-color: #6ab04c;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#form button:hover {
+    background-color: #55b756;
+}
+
+#form button:active {
+    background-color: #4a9e4c;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d3436;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
